@@ -2,6 +2,8 @@
 
 Most of the code is "stolen" from terraform-provider-kubernetes and https://github.com/greg-gajda/terraform-provider-po but upgrade the terraform-plugin-sdk to v2
 
+The main reason for this provider creation is that I was not able to build https://github.com/greg-gajda/terraform-provider-po, I wanted to upgrade the provider to the plugin-sdk v2 to see if that would enable the terraform-ls to do autocompletion of the types, but after cloning the repo from Greg and trying multiple different `go mod` invocations I gave up and this is the result.
+
 For now only support service monitors.
 
 All of this is hardly tested, but generally speaking it works, you can deploy service monitors with it.
