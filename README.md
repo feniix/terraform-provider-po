@@ -1,5 +1,7 @@
 # This is a terraform provider for Prometheus operator deployments on Kubernetes
 
+Most of the code is "stolen" from terraform-provider-kubernetes and https://github.com/greg-gajda/terraform-provider-po but upgrade the terraform-plugin-sdk to v2
+
 For now only support service monitors.
 
 All of this is hardly tested, but generally speaking it works, you can deploy service monitors with it.
