@@ -3,8 +3,9 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+
 	"github.com/feniix/terraform-provider-po/po"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
 )
 
 func main() {
@@ -15,7 +16,7 @@ func main() {
 		ProviderFunc: po.Provider,
 	}
 	if debugFlag != nil && *debugFlag {
-		plugin.Debug(context.Background(), "registry.terraform.io/tempus/po", serveOpts)
+		plugin.Debug(context.Background(), "registry.terraform.io/feniix/po", serveOpts)
 	} else {
 		plugin.Serve(serveOpts)
 	}
