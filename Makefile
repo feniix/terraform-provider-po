@@ -19,7 +19,7 @@ clean:
 	rm -rf out
 
 clean-tfstate:
-	rm -rf ./tf/terraform.* ./tf/.terraform ./tf/.terraform.lock.hcl ./tf/crash.log
+	rm -rf ./examples/**/terraform.* ./exa/mples/**.terraform ../examples/**/.terraform.lock.hcl ./examples/**/crash.log
 
 install-operator:
 	kubectl apply -f config/bundle.yaml
