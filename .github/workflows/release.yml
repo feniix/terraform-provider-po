@@ -43,6 +43,7 @@ jobs:
         with:
           version: latest
           args: release --rm-dist
+          workdir: ./cmd/terraform-provider-po
         env:
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
           # GitHub sets this automatically
